@@ -1,0 +1,8 @@
+- [x] Check the requested Windows destination and any local repository instructions.
+- [x] Copy the completed NAMMA 204 dashboard into a new folder under the destination.
+- [x] Verify key project files and report the exact local path and run command.
+- [ ] Add visible portrait imagery for Mr. U.T. Khader, Rahul Gandhi, D.K. Shivakumar, and Rajiv Gandhi in the hero and representative sections.
+- [ ] Make the left navigation and visible dashboard controls open or respond clearly.
+- [ ] Add supporting civic-work images to the project and update details.
+- [ ] Re-verify interactions and sync the revised project to the Windows folder.
+- [ ] Update the top-left brand mark to visibly combine the hand symbol with 204.

@@ -21,3 +21,32 @@ button:focus-visible,input:focus-visible,textarea:focus-visible { outline:2px so
 @media (max-width:980px){.sidebar{display:none}.main-area{margin-left:0;width:100%;padding:14px}.topbar>.icon-button{display:grid}.topbar{gap:10px}.location-select{min-width:0;flex:1}.content-grid{grid-template-columns:1fr}.right-column{grid-template-columns:repeat(2,1fr)}.weekly{grid-column:span 2}.representative{min-height:185px}}
 @media (max-width:680px){.topbar{height:auto;flex-wrap:wrap}.location-select{order:3;width:100%;padding:10px}.profile-copy{display:none}.profile-trigger{gap:7px}.content-grid{display:block}.right-column{display:grid;grid-template-columns:1fr;margin-top:14px}.weekly{grid-column:auto}.hero-card{height:445px}.hero-copy{padding:28px 20px}.hero-copy h1{font-size:33px}.leaders{left:15px;right:15px;bottom:17px;justify-content:space-between;gap:5px}.leaders div{min-width:0}.leaders strong{font-size:11px}.leaders span{font-size:9px}.metrics-card{grid-template-columns:repeat(2,1fr);gap:18px;padding:18px 10px}.metric{border-right:0;padding:0 5px}.metric-value{font-size:23px}.lower-grid{grid-template-columns:1fr}.map-art{height:210px}.impact-body{gap:17px}.donut{width:125px;height:125px}.hero-actions{margin-top:30px}.updates-panel,.focus-panel{min-height:auto}}
 @media (prefers-reduced-motion:no-preference){.hero-card,.panel,.metrics-card{animation:rise .5s var(--ease-out) both}.panel:nth-child(2){animation-delay:60ms}.panel:nth-child(3){animation-delay:120ms}@keyframes rise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}}
+
+/* Portrait and brand overrides: keep the hand-and-204 mark legible, put the leadership strip above the hero image, and keep names readable below the figures. */
+.seal-wrap{background:#fff;box-shadow:0 0 22px rgba(25,198,91,.14)}
+.leadership-strip{position:absolute;z-index:2;inset:auto !important;left:42% !important;right:auto !important;bottom:8px !important;width:53% !important;height:65% !important;max-height:none;object-fit:contain;object-position:center bottom;pointer-events:none;filter:drop-shadow(0 8px 15px rgba(0,0,0,.45))}
+.reference-leadership{left:40% !important;bottom:0 !important;width:60% !important;height:72% !important;object-fit:contain;object-position:center bottom;opacity:.96;mix-blend-mode:screen;mask-image:linear-gradient(90deg,transparent 0%,black 6%,black 94%,transparent 100%),linear-gradient(to bottom,transparent 0%,black 14%,black 78%,transparent 100%);mask-composite:intersect}
+.reference-leadership + .leaders{opacity:1}
+.rajiv-portrait{position:absolute;z-index:2;inset:auto !important;left:84% !important;right:auto !important;top:auto !important;bottom:13px !important;width:10% !important;height:52% !important;object-fit:contain;object-position:center bottom;border-radius:40% 40% 8% 8%;opacity:.9;mix-blend-mode:screen;mask-image:linear-gradient(to bottom,transparent 0%,black 10%,black 78%,transparent 100%)}
+.reference-leadership{display:block!important;position:absolute;z-index:2;left:20%!important;right:auto!important;bottom:20px!important;width:79%!important;height:70%!important;object-fit:contain;object-position:center bottom;opacity:.98;mix-blend-mode:screen;pointer-events:none;mask-image:linear-gradient(90deg,transparent 0%,black 3%,black 97%,transparent 100%),linear-gradient(to bottom,transparent 0%,black 8%,black 92%,transparent 100%);mask-composite:intersect}
+.rajiv-portrait{display:none!important}
+.leader-portraits{position:absolute;z-index:2;left:24%;right:auto;width:75%;bottom:15px;height:64%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:end;gap:3px;pointer-events:none}
+.leader-person{display:grid;grid-template-rows:minmax(0,1fr) auto auto;min-width:0;height:100%;align-items:end;text-align:center}
+.leader-person img{display:block;width:100%;height:calc(100% - 34px);object-fit:cover;object-position:center top;border-radius:48% 48% 10% 10%;border:1px solid rgba(255,255,255,.12);filter:drop-shadow(0 8px 12px rgba(0,0,0,.42));mix-blend-mode:screen}
+.leader-person strong{font-size:12px;font-weight:600;white-space:normal;line-height:1.15}.leader-person span{font-size:9px;color:#bdc8cd;white-space:normal;line-height:1.1}
+.leader-person:nth-child(4){display:none}
+.rajiv-hero-fallback{position:absolute;z-index:4;right:7px;bottom:15px;width:21%;height:64%;display:grid;grid-template-rows:minmax(0,1fr) auto auto;align-items:end;text-align:center;pointer-events:none}.rajiv-hero-fallback img{display:block;width:100%;height:calc(100% - 34px);object-fit:cover;object-position:center top;border-radius:48% 48% 10% 10%;border:1px solid rgba(255,255,255,.14);filter:drop-shadow(0 8px 12px rgba(0,0,0,.42));mix-blend-mode:screen}.rajiv-hero-fallback strong{font-size:12px;line-height:1.15}.rajiv-hero-fallback span{font-size:9px;color:#bdc8cd;line-height:1.1}
+.leaders{display:none}
+.rep-photo{object-fit:cover}
+.red-chip{background:rgba(242,41,46,.14);color:#ff7074}
+.project-thumb{width:100%;height:90px;object-fit:cover;border-radius:7px;margin-bottom:4px;opacity:.9}
+@media (max-width:1200px){.leadership-strip{left:36% !important;width:60% !important}.reference-leadership{left:16%!important;width:83%!important;height:68%!important}}
+@media (max-width:680px){.leadership-strip{left:6% !important;width:92% !important;height:52% !important;bottom:25px !important}.reference-leadership{left:3%!important;width:94%!important;height:44%!important;bottom:25px!important}}
+@media (max-width:1200px){.leader-portraits{left:18%;width:80%;height:61%}.leader-person strong{font-size:11px}}
+@media (max-width:680px){.leader-portraits{left:2%;width:96%;height:42%;bottom:32px;gap:2px}.leader-person img{height:calc(100% - 28px)}.leader-person strong{font-size:10px}.leader-person span{font-size:8px}}
+@media (max-width:1200px){.rajiv-hero-fallback{right:4px;width:22%;height:61%}.rajiv-hero-fallback strong{font-size:11px}}
+@media (max-width:680px){.rajiv-hero-fallback{right:2%;width:23%;height:42%;bottom:32px}.rajiv-hero-fallback img{height:calc(100% - 28px)}.rajiv-hero-fallback strong{font-size:10px}.rajiv-hero-fallback span{font-size:8px}}
+.hero-copy{z-index:5!important}
+.reference-leadership{left:16%!important;width:70%!important;height:48%!important;bottom:14px!important;object-fit:fill!important}
+@media (max-width:1200px){.reference-leadership{left:12%!important;width:76%!important;height:46%!important}}
+@media (max-width:680px){.reference-leadership{left:2%!important;width:96%!important;height:42%!important;bottom:25px!important}}
